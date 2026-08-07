@@ -1,6 +1,6 @@
 ﻿function orderItem(itemName) {
 
-    const phoneNumber = "01015289128";
+    const phoneNumber = "010152891270";
 
     const message =
         "Hello Renato Bakery! I would like to order: " + itemName;
