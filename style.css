@@ -12,7 +12,6 @@ body {
     color: #f5eee5;
 }
 
-
 /* NAVBAR */
 
 nav {
@@ -59,11 +58,7 @@ header {
     align-items: center;
     text-align: center;
     position: relative;
-    background: radial-gradient(
-        circle at center,
-        #24180f 0%,
-        #080706 60%
-    );
+    background: radial-gradient(circle at center, #24180f 0%, #080706 60%);
 }
 
 .hero-content {
@@ -199,7 +194,7 @@ section {
     background: #17100b;
     border: 1px solid #3b2a1d;
     border-radius: 15px;
-    padding: 15px 15px 25px;
+    padding: 20px;
     text-align: center;
     transition: 0.3s;
     overflow: hidden;
@@ -220,18 +215,16 @@ section {
 
 .food-image {
     width: 100%;
-    height: 210px;
+    height: 220px;
+    object-fit: contain;
+    background: #17100b;
+    border-radius: 12px;
     display: block;
-    object-fit: cover;
-    border-radius: 11px;
     margin-bottom: 18px;
-    transition: 0.4s;
 }
 
-.menu-card:hover .food-image {
-    transform: scale(1.03);
-}
 
+/* MENU TEXT */
 
 .menu-card h4 {
     color: #f4d19d;
@@ -391,7 +384,7 @@ footer p {
 }
 
 
-/* PHONE */
+/* PHONE LINK */
 
 .phone-link {
     color: #d6a15d;
@@ -464,14 +457,14 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    .food-image {
-        height: 220px;
-    }
-
     .about-logo {
         width: 220px;
         height: 220px;
         font-size: 100px;
+    }
+
+    .food-image {
+        height: 200px;
     }
 }
 ```
