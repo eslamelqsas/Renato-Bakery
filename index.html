@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,349 +12,395 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="logo">🥐 Renato</div>
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">🥐 Renato</div>
 
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#menu">Menu</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+
+<!-- HOME -->
+<header id="home">
+
+    <div class="skull">💀</div>
+
+    <div class="hero-content">
+
+        <p class="small-title">FRESHLY BAKED EVERY DAY</p>
+
+        <h1>Renato</h1>
+
+        <h2>Bakery & Pastries</h2>
+
+        <p class="hero-text">
+            Fresh pastries, warm croissants and delicious treats
+            made with passion every single day.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#menu" class="btn primary">Explore Menu</a>
+            <a href="#contact" class="btn secondary">Contact Us</a>
         </div>
-    </nav>
+
+    </div>
+
+</header>
 
 
-    <!-- HOME -->
-    <header id="home">
+<!-- MENU -->
+<section id="menu">
 
-        <div class="skull">💀</div>
+    <div class="section-title">
+        <span>OUR MENU</span>
+        <h2>Fresh From The Oven</h2>
+    </div>
 
-        <div class="hero-content">
 
-            <p class="small-title">FRESHLY BAKED EVERY DAY</p>
+    <!-- CROISSANTS -->
+    <div class="menu-category">
 
-            <h1>Renato</h1>
+        <h3>🥐 Croissants</h3>
 
-            <h2>Bakery & Pastries</h2>
+        <div class="menu-container">
 
-            <p class="hero-text">
-                Fresh pastries, warm croissants and delicious treats
-                made with passion every single day.
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=85"
+                     alt="Classic Croissant">
+
+                <h4>Classic Croissant</h4>
+                <p>Buttery, flaky and freshly baked every morning.</p>
+                <strong>60 EGP</strong>
+                <button onclick="orderItem('Classic Croissant')">Order</button>
+            </div>
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=800&q=85"
+                     alt="Chocolate Croissant">
+
+                <h4>Chocolate Croissant</h4>
+                <p>Flaky pastry filled with rich melted chocolate.</p>
+                <strong>85 EGP</strong>
+                <button onclick="orderItem('Chocolate Croissant')">Order</button>
+            </div>
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=85"
+                     alt="Pistachio Croissant">
+
+                <h4>Pistachio Croissant</h4>
+                <p>Golden croissant filled with creamy pistachio.</p>
+                <strong>90 EGP</strong>
+                <button onclick="orderItem('Pistachio Croissant')">Order</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CAKES -->
+    <div class="menu-category">
+
+        <h3>🍰 Cakes</h3>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=85"
+                     alt="Chocolate Cake">
+
+                <h4>Chocolate Cake</h4>
+                <p>Rich chocolate cake with smooth chocolate cream.</p>
+                <strong>85 EGP</strong>
+                <button onclick="orderItem('Chocolate Cake')">Order</button>
+            </div>
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=800&q=85"
+                     alt="Red Velvet Cake">
+
+                <h4>Red Velvet</h4>
+                <p>Soft red velvet cake with creamy frosting.</p>
+                <strong>90 EGP</strong>
+                <button onclick="orderItem('Red Velvet')">Order</button>
+            </div>
+
+            <div class="menu-card special">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=85"
+                     alt="Renato Cake">
+
+                <h4>Renato Cake</h4>
+                <p>Our signature cake made with Renato's special cream.</p>
+                <strong>120 EGP</strong>
+                <button onclick="orderItem('Renato Cake')">Order</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COOKIES -->
+    <div class="menu-category">
+
+        <h3>🍪 Cookies</h3>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=85"
+                     alt="Chocolate Chip Cookies">
+
+                <h4>Chocolate Chip</h4>
+                <p>Soft handmade cookies with chocolate chips.</p>
+                <strong>65 EGP</strong>
+                <button onclick="orderItem('Chocolate Chip Cookies')">Order</button>
+            </div>
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=85"
+                     alt="Double Chocolate Cookies">
+
+                <h4>Double Chocolate</h4>
+                <p>Chocolate cookies with extra chocolate chunks.</p>
+                <strong>75 EGP</strong>
+                <button onclick="orderItem('Double Chocolate Cookies')">Order</button>
+            </div>
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=85"
+                     alt="Pistachio Cookie">
+
+                <h4>Pistachio Cookie</h4>
+                <p>Crunchy cookies with premium pistachios.</p>
+                <strong>75 EGP</strong>
+                <button onclick="orderItem('Pistachio Cookie')">Order</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PASTRIES -->
+    <div class="menu-category">
+
+        <h3>🥨 Pastries</h3>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=85"
+                     alt="Cinnamon Roll">
+
+                <h4>Cinnamon Roll</h4>
+                <p>Soft cinnamon pastry with sweet glaze.</p>
+                <strong>50 EGP</strong>
+                <button onclick="orderItem('Cinnamon Roll')">Order</button>
+            </div>
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=85"
+                     alt="Danish Pastry">
+
+                <h4>Danish Pastry</h4>
+                <p>Light and crispy Danish pastry.</p>
+                <strong>70 EGP</strong>
+                <button onclick="orderItem('Danish Pastry')">Order</button>
+            </div>
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=85"
+                     alt="Apple Danish">
+
+                <h4>Apple Danish</h4>
+                <p>Fresh apple filling inside a golden pastry.</p>
+                <strong>80 EGP</strong>
+                <button onclick="orderItem('Apple Danish')">Order</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DRINKS -->
+    <div class="menu-category">
+
+        <h3>☕ Drinks</h3>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=85"
+                     alt="Espresso">
+
+                <h4>Espresso</h4>
+                <p>Strong and freshly brewed espresso.</p>
+                <strong>55 EGP</strong>
+                <button onclick="orderItem('Espresso')">Order</button>
+            </div>
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=85"
+                     alt="Cappuccino">
+
+                <h4>Cappuccino</h4>
+                <p>Espresso with smooth steamed milk foam.</p>
+                <strong>70 EGP</strong>
+                <button onclick="orderItem('Cappuccino')">Order</button>
+            </div>
+
+            <div class="menu-card">
+                <img class="food-image"
+                     src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=85"
+                     alt="Iced Latte">
+
+                <h4>Iced Latte</h4>
+                <p>Cold creamy latte served over ice.</p>
+                <strong>100 EGP</strong>
+                <button onclick="orderItem('Iced Latte')">Order</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+
+    <div class="about-content">
+
+        <div class="about-text">
+
+            <span>OUR STORY</span>
+
+            <h2>Made With Passion</h2>
+
+            <p>
+                At Renato, we believe that great baking starts with
+                great ingredients and a lot of passion.
             </p>
 
-            <div class="hero-buttons">
-                <a href="#menu" class="btn primary">Explore Menu</a>
-                <a href="#contact" class="btn secondary">Contact Us</a>
-            </div>
-
-        </div>
-
-    </header>
-
-
-    <!-- MENU -->
-    <section id="menu">
-
-        <div class="section-title">
-            <span>OUR MENU</span>
-            <h2>Fresh From The Oven</h2>
-        </div>
-
-
-        <!-- CROISSANTS -->
-        <div class="menu-category">
-
-            <h3>🥐 Croissants</h3>
-
-            <div class="menu-container">
-
-                <div class="menu-card">
-                    <div class="food-image">🥐</div>
-                    <h4>Classic Croissant</h4>
-                    <p>Buttery, flaky and freshly baked every morning.</p>
-                    <strong>60 EGP</strong>
-                    <button onclick="orderItem('Classic Croissant')">Order</button>
-                </div>
-
-                <div class="menu-card">
-                    <div class="food-image">🥐</div>
-                    <h4>Chocolate Croissant</h4>
-                    <p>Flaky pastry filled with rich melted chocolate.</p>
-                    <strong>85 EGP</strong>
-                    <button onclick="orderItem('Chocolate Croissant')">Order</button>
-                </div>
-
-                <div class="menu-card">
-                    <div class="food-image">🥐</div>
-                    <h4>Pistachio Croissant</h4>
-                    <p>Golden croissant filled with creamy pistachio.</p>
-                    <strong>90 EGP</strong>
-                    <button onclick="orderItem('Pistachio Croissant')">Order</button>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- CAKES -->
-        <div class="menu-category">
-
-            <h3>🍰 Cakes</h3>
-
-            <div class="menu-container">
-
-                <div class="menu-card">
-                    <div class="food-image">🍫</div>
-                    <h4>Chocolate Cake</h4>
-                    <p>Rich chocolate cake with smooth chocolate cream.</p>
-                    <strong>85 EGP</strong>
-                    <button onclick="orderItem('Chocolate Cake')">Order</button>
-                </div>
-
-                <div class="menu-card">
-                    <div class="food-image">🍰</div>
-                    <h4>Red Velvet</h4>
-                    <p>Soft red velvet cake with creamy frosting.</p>
-                    <strong>90 EGP</strong>
-                    <button onclick="orderItem('Red Velvet')">Order</button>
-                </div>
-
-                <div class="menu-card special">
-                    <div class="food-image">🍰</div>
-                    <h4>Renato Cake</h4>
-                    <p>Our signature cake made with Renato's special cream.</p>
-                    <strong>120 EGP</strong>
-                    <button onclick="orderItem('Renato Cake')">Order</button>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- COOKIES -->
-        <div class="menu-category">
-
-            <h3>🍪 Cookies</h3>
-
-            <div class="menu-container">
-
-                <div class="menu-card">
-                    <div class="food-image">🍪</div>
-                    <h4>Chocolate Chip</h4>
-                    <p>Soft handmade cookies with chocolate chips.</p>
-                    <strong>65 EGP</strong>
-                    <button onclick="orderItem('Chocolate Chip Cookies')">Order</button>
-                </div>
-
-                <div class="menu-card">
-                    <div class="food-image">🍪</div>
-                    <h4>Double Chocolate</h4>
-                    <p>Chocolate cookies with extra chocolate chunks.</p>
-                    <strong>75 EGP</strong>
-                    <button onclick="orderItem('Double Chocolate Cookies')">Order</button>
-                </div>
-
-                <div class="menu-card">
-                    <div class="food-image">🍪</div>
-                    <h4>Pistachio Cookie</h4>
-                    <p>Crunchy cookies with premium pistachios.</p>
-                    <strong>75 EGP</strong>
-                    <button onclick="orderItem('Pistachio Cookie')">Order</button>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- PASTRIES -->
-        <div class="menu-category">
-
-            <h3>🥨 Pastries</h3>
-
-            <div class="menu-container">
-
-                <div class="menu-card">
-                    <div class="food-image">🥨</div>
-                    <h4>Cinnamon Roll</h4>
-                    <p>Soft cinnamon pastry with sweet glaze.</p>
-                    <strong>50 EGP</strong>
-                    <button onclick="orderItem('Cinnamon Roll')">Order</button>
-                </div>
-
-                <div class="menu-card">
-                    <div class="food-image">🥐</div>
-                    <h4>Danish Pastry</h4>
-                    <p>Light and crispy Danish pastry.</p>
-                    <strong>70 EGP</strong>
-                    <button onclick="orderItem('Danish Pastry')">Order</button>
-                </div>
-
-                <div class="menu-card">
-                    <div class="food-image">🍎</div>
-                    <h4>Apple Danish</h4>
-                    <p>Fresh apple filling inside a golden pastry.</p>
-                    <strong>80 EGP</strong>
-                    <button onclick="orderItem('Apple Danish')">Order</button>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- DRINKS -->
-        <div class="menu-category">
-
-            <h3>☕ Drinks</h3>
-
-            <div class="menu-container">
-
-                <div class="menu-card">
-                    <div class="food-image">☕</div>
-                    <h4>Espresso</h4>
-                    <p>Strong and freshly brewed espresso.</p>
-                    <strong>55 EGP</strong>
-                    <button onclick="orderItem('Espresso')">Order</button>
-                </div>
-
-                <div class="menu-card">
-                    <div class="food-image">☕</div>
-                    <h4>Cappuccino</h4>
-                    <p>Espresso with smooth steamed milk foam.</p>
-                    <strong>70 EGP</strong>
-                    <button onclick="orderItem('Cappuccino')">Order</button>
-                </div>
-
-                <div class="menu-card">
-                    <div class="food-image">🥤</div>
-                    <h4>Iced Latte</h4>
-                    <p>Cold creamy latte served over ice.</p>
-                    <strong>100 EGP</strong>
-                    <button onclick="orderItem('Iced Latte')">Order</button>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-    <section id="about" class="about-section">
-
-        <div class="about-content">
-
-            <div class="about-text">
-
-                <span>OUR STORY</span>
-
-                <h2>Made With Passion</h2>
-
-                <p>
-                    At Renato, we believe that great baking starts with
-                    great ingredients and a lot of passion.
-                </p>
-
-                <p>
-                    Every pastry is prepared fresh to give you the perfect
-                    taste, texture and experience.
-                </p>
-
-                <a href="#contact" class="btn primary">
-                    Visit Renato
-                </a>
-
-            </div>
-
-            <div class="about-logo">
-                🥐
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact">
-
-        <div class="section-title">
-
-            <span>GET IN TOUCH</span>
-
-            <h2>Contact Renato</h2>
-
-        </div>
-
-        <div class="contact-container">
-
-            <div class="contact-card">
-                <div>📞</div>
-                <h3>Phone</h3>
-                <p>
-                    <a href="tel:010152891270" class="phone-link">
-                        010152891270
-                    </a>
-                </p>
-            </div>
-
-            <div class="contact-card">
-                <div>📍</div>
-                <h3>Location</h3>
-                <p>
-                    Alexandria, Egypt
-                </p>
-            </div>
-
-            <div class="contact-card">
-                <div>🕐</div>
-                <h3>Opening Hours</h3>
-                <p>
-                    8:00 AM - 12:00 AM
-                </p>
-            </div>
-
-        </div>
-
-        <div class="contact-button">
-
-            <a href="https://wa.me/2010152891270"
-               target="_blank"
-               class="btn primary">
-
-                Order on WhatsApp
-
+            <p>
+                Every pastry is prepared fresh to give you the perfect
+                taste, texture and experience.
+            </p>
+
+            <a href="#contact" class="btn primary">
+                Visit Renato
             </a>
 
         </div>
 
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer-logo">
-            🥐 Renato
+        <div class="about-logo">
+            🥐
         </div>
 
-        <p>
-            Freshly baked. Made with passion.
-        </p>
+    </div>
 
-        <p class="copyright">
-            © 2026 Renato Bakery. All Rights Reserved.
-        </p>
-
-    </footer>
+</section>
 
 
-    <script src="script.js"></script>
+<!-- CONTACT -->
+<section id="contact">
+
+    <div class="section-title">
+
+        <span>GET IN TOUCH</span>
+
+        <h2>Contact Renato</h2>
+
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-card">
+            <div>📞</div>
+            <h3>Phone</h3>
+            <p>
+                <a href="tel:010152891270" class="phone-link">
+                    010152891270
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-card">
+            <div>📍</div>
+            <h3>Location</h3>
+            <p>
+                Alexandria, Egypt
+            </p>
+        </div>
+
+        <div class="contact-card">
+            <div>🕐</div>
+            <h3>Opening Hours</h3>
+            <p>
+                8:00 AM - 12:00 AM
+            </p>
+        </div>
+
+    </div>
+
+    <div class="contact-button">
+
+        <a href="https://wa.me/2010152891270"
+           target="_blank"
+           class="btn primary">
+
+            Order on WhatsApp
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-logo">
+        🥐 Renato
+    </div>
+
+    <p>
+        Freshly baked. Made with passion.
+    </p>
+
+    <p class="copyright">
+        © 2026 Renato Bakery. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
+```
