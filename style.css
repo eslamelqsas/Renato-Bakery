@@ -468,3 +468,18 @@ footer p {
     }
 }
 ```
+```css
+/* Fix specific food images */
+
+.menu-card img[alt="Renato Cake"] {
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+}
+
+.menu-card img[alt="Chocolate Croissant"] {
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+}
+```
